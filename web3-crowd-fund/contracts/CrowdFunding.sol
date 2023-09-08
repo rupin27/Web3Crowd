@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
-contract CrowdFunding {
+import "@thirdweb-dev/contracts/ThirdwebContract.sol"; 
+
+contract CrowdFunding is ThirdwebContract {
     struct Campaign {
         address owner;
         string title;
